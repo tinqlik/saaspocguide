@@ -1,0 +1,36 @@
+sidebar:
+  title: "SaaS PoC Setup"
+  nav: sidebar-toc
+  
+sidebar-toc:
+ - title: "Configuration"
+   children:
+    - title: "SaaS tenant"
+     url: /
+    - title: "Identity Provider"
+      url: /
+      children:
+       - title: "Okta"
+         url: /
+       - title: "Auth0"
+         url: /
+    - title: "QDT"
+      url: /
+    - title: "Multi-cloud"
+      url: /
+ - title: "Setting up Development Workflow"
+   children:
+    - title: "Shared Spaces"
+      url: /
+    - title: "Managed Spaces"
+      url: /
+ - title: "Setting up Demo assets"
+   children:
+    - title: "User Groups"
+      url: /
+    - title: "Managed Spaces"
+      ur: /
+    - title: "Sample Apps"
+      url: /
+ 
+ 
