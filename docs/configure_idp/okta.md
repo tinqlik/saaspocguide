@@ -24,9 +24,11 @@ Once you have an Okta account, an application needs to be created to interact wi
 ![okta1](images/okta1.png)
 
 2.  Click on the button, **Add Application**
+
 ![okta2](images/okta2.png)
 
 3.	Click on the button, **Create New App**
+
 ![okta3](images/okta3.png)
 
 4.	Select the following:
@@ -43,5 +45,7 @@ Once you have an Okta account, an application needs to be created to interact wi
 ![okta6](images/okta6.png)
 
 7.  Click on the **Sign On** tab if you want to retrieve Group information for users from Okta.  This can be done using string-based filter, or using Okta expression language (https://developer.okta.com/docs/reference/okta-expression-language/).  In this example, we will bring in Groups that start with *Qlik*
+
 ![okta7](images/okta7.png)
-Refer to the Section, [Qlik Groups](../sample data/groups.md), for detailed instructions on creating the groups that will be used to set up this environment
+
+Refer to the Section, -[Qlik Groups](../sample_data/groups.md), for detailed instructions on creating the groups that will be used to set up this environment
