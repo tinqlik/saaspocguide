@@ -42,7 +42,6 @@ Once you have an Okta account, an application needs to be created to interact wi
 6.  Once the application is Saved, Client Credentials will be generated.  This will be used to enable a secure communication between Okta and the Qlik Sense SaaS tenant.  Copy these values into a text editor like **Notepad** for easy reference when configuring Qlik Sense
 ![okta6](images/okta6.png)
 
-7.  Click on the **Sign On** tab if you want to retrieve Group information for users from Okta.  This can be done using string-based filter, or using Okta expression language (https://developer.okta.com/docs/reference/okta-expression-language/).  In this example, we will bring in Groups that start with *Qlik*
-![okta7](images/okta7.png)
-
+7.  Click on the **Sign On** tab if you want to retrieve Group information for users from Okta.  This can be done using string-based filter, or using Okta expression language (https://developer.okta.com/docs/reference/okta-expression-language/).  In this example, we will bring in Groups that start with *Qlik*\
+![okta7](images/okta7.png)\
 Refer to the Section, [Qlik Groups](../sample_data/groups.md), for detailed instructions on creating the groups that will be used to set up this environment
