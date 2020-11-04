@@ -23,10 +23,10 @@ Once you have an Okta account, an application needs to be created to interact wi
 1.  Navigate to the **Administration** console.  In the menu bar, click on **Applications**
 ![okta1](images/okta1.png)
 
-2.  Click on the button, **Add Application**
+2.  Click on the button, **Add Application**\
 ![okta2](images/okta2.png)
 
-3.	Click on the button, **Create New App**
+3.	Click on the button, **Create New App**\
 ![okta3](images/okta3.png)
 
 4.	Select the following:
