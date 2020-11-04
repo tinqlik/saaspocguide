@@ -4,6 +4,9 @@ title: Okta
 parent: Configuring IDP
 nav_order: 1
 ---
+<!--#
+LASTVERIFIEDDATE=11/01/2020
+$-->
 
 # Configuring Okta
 {:.no_toc}
@@ -20,4 +23,5 @@ Once you have an Okta account, an application needs to be created to interact wi
 1. Navigate to the **Administration** console.  In the menu bar, click on **Applications**
 <details>
   <summary>![okta1](images/okta1.png)</summary>
+
 </details>
