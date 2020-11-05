@@ -71,3 +71,24 @@ After the IDP has been configured, it needs to be integrated with Qlik Sense Saa
     1.  **Type**: Interactive
     2.	**Provider**: Okta\
     ![qcs4okta](images/qcs4okta.png)
+
+5.	Once the IDP is selected, the remainder of the form will expand.  Fill in the Application credentials section of the form with the following:
+    1.	OpenID Connect metadata URI (this is the discovery endpoint of your Okta authorization server): https://[*Your Okta domain*]/.well-known/openid-configuration (e.g. https://dev-12345.okta.com/.well-known/openid-configuration)
+    2.  Client ID: copied from Okta configuration into Notepad (e.g. 0oadfavnQUjeI1Q0h5d5)
+    3.  Client secret: copied from Okta configuration into Notepad
+    4.	Realm (optional): Okta 
+    **Note**: *Can be meaningful to set when you run a Qlik multi-cloud environment and want to have consistent license usage across all Qlik Sense Sites.  Enter here the user directory attribute you have set in the SAML configuration for an Okta IDP on QSE on Windows*
+    ![qcs5okta](images/qcs5okta.png)
+
+6.	The next section of the form details the mapping of properties between the IDP and the Qlik user attributes.  For the most part, the default values can be kept.  Fill in the Claims mapping section of the form with the following:
+    1.  **Sub**: preferred_username
+    **Note**: *if kept as the default ‘sub’, this will be some cryptic value (e.g. 00ukyzk8yxsCuwhR99x).  Hence, changing it to ‘preferred_username’ will be more meaningful and may be required in setting up multi-cloud environments*
+    2.	**Name**: name
+    3.	**Groups**: groups
+    4.	**Email**: email
+    5.	**Client_id**: client_id
+    6.	**Picture**: picture
+    7.	**Email_verified (optional)**: [blank]
+    **Note**: *Some of the information to be entered will be dependent on the IDP you are using. This example is for using Okta
+    ![qcs6okta](images/qcs6okta.png)
+
