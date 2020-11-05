@@ -58,7 +58,7 @@ Refer to the Section, [Qlik Groups](../sample_data/groups.md), for detailed inst
 ### Integrating Okta with Qlik Sense SaaS
 After the IDP has been configured, it needs to be integrated with Qlik Sense SaaS.  By default, the Qlik Sense SaaS is using Qlik IDP.  A new IDP needs to be created to point to the IDP that has been created
 
-1.  Navigate to the **Administration** console for the Qlik Sense tenant
+1.  Navigate to the **Administration** console for the Qlik Sense tenant\
 ![qcs1](images/qcs1.png)
 
 2.	Navigate to the **Configuration>Identity Provider** section in the left-hand navigation pane
@@ -69,5 +69,5 @@ After the IDP has been configured, it needs to be integrated with Qlik Sense Saa
 
 4.	Fill in the IDP form with the following:
     1.  **Type**: Interactive
-    2.	**Provider**: Okta
+    2.	**Provider**: Okta\
     ![qcs4okta](images/qcs4okta.png)
