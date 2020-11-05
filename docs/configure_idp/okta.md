@@ -30,13 +30,13 @@ Once you have an Okta account, an application needs to be created to interact wi
 ![okta3](images/okta3.png)
 
 4.	Select the following:
-    1. **Platform** - Web
-    2. **Sign on method** - OpenID Connect
+    1. **Platform**: Web
+    2. **Sign on method**: OpenID Connect
     ![okta4](images/okta4.png)
 
 5.	Fill in the form with the following:
-    1. **Application Name** - QCS
-    2. **Login redirect URIs** – QCS tenant URL + /login/callback (e.g. *https://tinqcs.us.qlikcloud.com/login/callback*)
+    1. **Application Name**: QCS
+    2. **Login redirect URIs**: QCS tenant URL + /login/callback (e.g. *https://tinqcs.us.qlikcloud.com/login/callback*)
     ![okta5](images/okta5.png)
 
 6.  Once the application is Saved, Client Credentials will be generated.  This will be used to enable a secure communication between Okta and the Qlik Sense SaaS tenant.  Copy these values into a text editor like **Notepad** for easy reference when configuring Qlik Sense
@@ -54,3 +54,20 @@ Refer to the Section, [Qlik Groups](../sample_data/groups.md), for detailed inst
 ![okta9](images/okta9.png)
 
 10.	The minimum settings for Okta is now complete to integrate with your Qlik Sense SaaS tenant
+
+### Integrating Okta with Qlik Sense SaaS
+After the IDP has been configured, it needs to be integrated with Qlik Sense SaaS.  By default, the Qlik Sense SaaS is using Qlik IDP.  A new IDP needs to be created to point to the IDP that has been created
+
+1.  Navigate to the **Administration** console for the Qlik Sense tenant
+![qcs1](images/qcs1.png)
+
+2.	Navigate to the **Configuration>Identity Provider** section in the left-hand navigation pane
+![qcs2](images/qcs2.png)
+
+3.	Select **Create new** button
+![qcs3](images/qcs3.png)
+
+4.	Fill in the IDP form with the following:
+    1.  **Type**: Interactive
+    2.	**Provider**: Okta
+    ![qcs4okta](images/qcs4okta.png)
