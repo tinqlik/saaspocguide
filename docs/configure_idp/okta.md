@@ -50,7 +50,7 @@ Refer to the Section, [Qlik Groups](../sample_data/groups.md), for detailed inst
 **Note**: *This step requires Users and/or Groups to be available in Okta. If they have not been created, skip this step for now, and come back once the Users and/or Groups have been created*
 ![okta8](images/okta8.png)
 
-9.	Select the **Assign** drop-down to assign users or groups to the Okta application.  It is recommended to use Groups as it will be easier to maintain
+9.	Select the **Assign** drop-down to assign users or groups to the Okta application.  It is recommended to use Groups as it will be easier to maintain\s
 ![okta9](images/okta9.png)
 
 10.	The minimum settings for Okta is now complete to integrate with your Qlik Sense SaaS tenant
@@ -89,6 +89,11 @@ After the IDP has been configured, it needs to be integrated with Qlik Sense Saa
     5.	**Client_id**: client_id
     6.	**Picture**: picture
     7.	**Email_verified (optional)**: [blank]\
-    **Note**: *Some of the information to be entered will be dependent on the IDP you are using. This example is for using Okta\
+    **Note**: *Some of the information to be entered will be dependent on the IDP you are using. This example is for using Okta*\
     ![qcs6okta](images/qcs6okta.png)
 
+7.	Click on **Create**.  This will begin the validation workflow to ensure the IDP is properly set up with your Qlik Sense tenant
+![qcs7](images/qcs7.png)
+
+8.	Click on **Save** and authenticate with your Okta user credential when prompted
+![qcs8okta](images/qcs8okta.png)
