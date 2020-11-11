@@ -97,3 +97,13 @@ After the IDP has been configured, it needs to be integrated with Qlik Sense Saa
 
 8.	Click on **Save** and authenticate with your Okta user credential when prompted
 ![qcs8okta](images/qcs8okta.png)
+
+9.	If the settings are correct, a window pops up with a preview of the data mapping
+![qcs9okta](images/qcs9okta.png)
+
+10.	Check the box for “*I have validated the above data.*” And click on **Confirm**
+![qcs10](images/qcs10.png)
+
+11.	Qlik Sense SaaS is now set up to leverage a 3rd party IDP!
+**Note**: *If the tenant had users prior to configuring a 3rd party IDP, if the email addresses correspond, then they will be automatically mapped and licensing/roles will be maintained.  Otherwise, clean up will be required for user allocations.  To check which IDP is being used to authenticate the user, look at the **IDP subject column** in the Users section*
+![qcs11](images/qcs11.png)
