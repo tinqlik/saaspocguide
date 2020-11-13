@@ -19,8 +19,11 @@ Before beginning, it is important to check that the Qlik Sense Enterprise on Win
 ![hybrid1](images/hybrid1.png) \
 **Note**: *For Qlik Sense version prior to November 2020 or if you had configured multi-cloud deployment previously, you will need to navigate to the URL **https://[host name]/api/msc/***
 
-2.	Click on **Deployments**\
-![hybrid2](images/hybrid2.png)
+2.	Set up a new SaaS deployment
+    1.  For Qlik Sense versions November 2020 and onwards, click on **Deployment setup** and then click on the link to navigate to **Multi-cloud setup console**
+    ![hybrid2a](images/hybrid2a.png)
+    2.  For Qlik Sense versions prior to November 2020, Click on **Deployments**\
+    ![hybrid2](images/hybrid2.png)
 
 3.	On the bottom-left corner click on **Set up new**\
 ![hybrid3](images/hybrid3.png)
@@ -30,11 +33,18 @@ Before beginning, it is important to check that the Qlik Sense Enterprise on Win
     2.	**API endpoint**: [*SaaS tenant URL*] (e.g. https://mytenant.us.qlikcloud.com/)
     3.	**Audience**: qlik.api
     4.	Select the checkbox for **Use local bearer token**
+![hybrid4](images/hybrid4.png)
 
 5.	Click on **Copy to clipboard** to save the *Qlik Cloud Services format* token to be used in configuring your SaaS tenant
 
 6.	Click on **Apply** to save the configuration
 
 ## Configuring Qlik Sense SaaS
-1.	Navigate to the **Administration** console in your Qlik Sense SaaS tenant
+1.	Navigate to the **Administration** console in your Qlik Sense SaaS tenant\
 ![saas1](images/saas1.png)
+
+2.	Navigate to the **Configuration>Identity Provider** section in the left navigation panel to add a multi-cloud IDP
+![saas2](images/saas2.png)
+
+3.	Click **Create New** on the right
+![saas3](images/saas3.png)
