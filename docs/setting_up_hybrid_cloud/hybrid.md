@@ -30,7 +30,7 @@ Before beginning, it is important to check that the Qlik Sense Enterprise on Win
 
 4.	Fill in the form with the following:
     1.  **Deployment name**: qcs
-    2.	**API endpoint**: [*SaaS tenant URL*] (e.g. https://mytenant.us.qlikcloud.com/)
+    2.	**API endpoint**: [*SaaS tenant URL*] (e.g. *https://mytenant.us.qlikcloud.com/*)
     3.	**Audience**: qlik.api
     4.	Select the checkbox for **Use local bearer token**
 ![hybrid4](images/hybrid4.png)
@@ -55,3 +55,15 @@ Before beginning, it is important to check that the Qlik Sense Enterprise on Win
     2.  **Description (optional)**: multi-cloud deployment
     3.  **Local bearer token**: *paste the string you copied on to the clipboard when configuring the Qlik Sense Enterprise on Windows deployment*
 ![saas4](images/saas4.png)
+
+## Preparing Apps for Cloud Distribution
+To determine which apps will be automatically distributed and synced between the two Qlik Sense environments, distribution policies need to be created in Qlik Sense Enterprise on Windows.  In instances where a client-managed environment has multiple cloud deployments, custom properties can be leveraged to determine the deployment the app should be distributed to
+
+### Creating Custom Properties for App Distribution
+The Custom Properties are used to determine which Cloud hub to distribute an app, in the case where a deployment has multiple Cloud hubs
+
+1.	In the QMC, navigate to **Custom properties**\
+![customprop1](images/customprop1.png)
+
+2.	At the bottom, click on **Create new**\
+![customprop2](images/customprop2.png)
