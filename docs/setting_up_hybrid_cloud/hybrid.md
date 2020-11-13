@@ -38,6 +38,7 @@ Before beginning, it is important to check that the Qlik Sense Enterprise on Win
 5.	Click on **Copy to clipboard** to save the *Qlik Cloud Services format* token to be used in configuring your SaaS tenant
 
 6.	Click on **Apply** to save the configuration
+**Note**: *If you click on **Test Connection** at this point, an error will occur as the SaaS tenant has not authorized the connection to the client-managed environment yet*
 
 ## Configuring Qlik Sense SaaS
 1.	Navigate to the **Administration** console in your Qlik Sense SaaS tenant\
@@ -48,3 +49,9 @@ Before beginning, it is important to check that the Qlik Sense Enterprise on Win
 
 3.	Click **Create New** on the right
 ![saas3](images/saas3.png)
+
+4.	Fill in the form with the following:
+    1.  **Type**: Multi-cloud
+    2.  **Description (optional)**: multi-cloud deployment
+    3.  **Local bearer token**: *paste the string you copied on to the clipboard when configuring the Qlik Sense Enterprise on Windows deployment*
+![saas4](images/saas4.png)
